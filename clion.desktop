@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=/usr/local/clion/bin/clion.sh
+Name=CLion
+Icon=clion
+Categories=Development;IDE;C
+Comment=IDE per la programmazione in C/C++
+StartupNotify=true
