@@ -1,9 +1,11 @@
 [Desktop Entry]
 Type=Application
 Terminal=false
-Exec=/usr/local/clion/bin/clion.sh
+Exec=/usr/local/clion/bin/clion.sh %f
+# Attenzione! Controllare il percorso dell'eseguibile
 Name=CLion
 Icon=clion
+# Alternativamente è possibile usare l'icona presente al percorso /usr/local/clion/bin/clion.svg (oppure .png)
 Categories=Development;IDE;C
 Comment=IDE per la programmazione in C/C++
 StartupNotify=true

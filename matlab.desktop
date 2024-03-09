@@ -3,8 +3,10 @@ Type=Application
 Terminal=false
 MimeType=text/x-matlab
 Exec=env LD_PRELOAD="/usr/lib64/libstdc++.so.6 /usr/lib64/libfreetype.so.6" LD_LIBRARY_PATH=/usr/lib/dri/ /usr/local/MATLAB/R2023b/bin/matlab -desktop
+# Attenzione! Modificare eventualmente la versione nel percorso all'eseguibile di MATLAB
 Name=Matlab
 Icon=/usr/local/MATLAB/R2023b/bin/glnxa64/cef_resources/matlab_icon.png
+# Alternativamente è possibile usare come icona l'icona matlab se presente nel pack di icone e se di gradimento estetico
 Categories=Development;Math;Science
 Comment=Scientific computing environment
 StartupNotify=true

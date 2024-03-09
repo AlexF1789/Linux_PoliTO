@@ -2,8 +2,10 @@
 Type=Application
 Terminal=false
 Exec=/usr/local/pycharm/bin/pycharm.sh
+# Attenzione! Controllare il percorso dell'eseguibile
 Name=PyCharm
 Icon=pycharm
+# Alternativamente è possibile usare l'icona presente al percorso /usr/local/pycharm/bin/pycharm.svg (oppure .png)
 Categories=Development;IDE;Python
 Comment=IDE per la programmazione in Python
 StartupNotify=true
