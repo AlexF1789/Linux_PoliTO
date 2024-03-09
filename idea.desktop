@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=/usr/local/idea_iu/bin/idea.sh %f
+# Attenzione! Controllare il percorso dell'eseguibile
+Name=IntelliJ Idea
+Icon=idea
+# Alternativamente è possibile usare l'icona presente al percorso /usr/local/idea_iu/bin/idea.svg (oppure .png)
+Categories=Development;IDE;Java
+Comment=IDE per la programmazione in Java
+StartupNotify=true
