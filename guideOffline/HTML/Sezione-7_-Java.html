@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sezione-7:-Java.md - Grip</title>
+  <link rel="icon" href="/__/grip/static/favicon.ico" />
+  <link rel="stylesheet" href="/__/grip/asset/light-0eace2597ca3.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark-a167e256da9c.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_dimmed-d11f2cf8009b.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_high_contrast-ea7373db06c8.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_colorblind-afa99dcf40f7.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_colorblind-af6c685139ba.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_high_contrast-578cdbc8a5a9.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_tritanopia-5cb699a7e247.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_tritanopia-9b32204967c6.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-primitives-2ef2a46b27ee.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-711f412bb361.css" />
+  <link rel="stylesheet" href="/__/grip/asset/global-2a4ebb67d284.css" />
+  <link rel="stylesheet" href="/__/grip/asset/github-f4d857cbc96a.css" />
+  <link rel="stylesheet" href="/__/grip/asset/repository-6247ca238fd4.css" />
+  <link rel="stylesheet" href="/__/grip/asset/code-36b3bf8f5e76.css" />
+  <link rel="stylesheet" href="/__/grip/static/octicons/octicons.css" />
+  <style>
+
+    body {
+      margin: 5%;
+    }
+
+    /* Page tweaks */
+    .preview-page {
+      margin-top: 64px;
+      margin-bottom: 21px;
+    }
+    /* User-content tweaks */
+    .timeline-comment-wrapper > .timeline-comment:after,
+    .timeline-comment-wrapper > .timeline-comment:before {
+      content: none;
+    }
+    /* User-content overrides */
+    .discussion-timeline.wide {
+      width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div id="preview-page" class="preview-page" data-autorefresh-url="/__/grip/refresh/">
+    <main id="js-repo-pjax-container">
+      <div class="clearfix new-discussion-timeline container-xl px-3 px-md-4 px-lg-5">
+        <div class="repository-content">
+          <div class="clearfix">
+            <div class="Layout Layout--flowRow-until-md Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end">
+              <div class="Layout-main">
+
+                
+
+                  <div id="readme" class="Box md Box--responsive">
+                    
+                      <div class="Box-header d-flex border-bottom-0 flex-items-center flex-justify-between color-bg-default rounded-top-2">
+                        <div class="d-flex flex-items-center">
+                          <h2 class="Box-title">
+                            Sezione-7:-Java.md
+                          </h2>
+                        </div>
+                      </div>
+                    
+                    <div class="Box-body px-5 pb-5">
+                      <article id="grip-content" class="markdown-body entry-content container-lg">
+                        <p>È impensabile su un computer di non poter eseguire applicativi scritti in Java, siano questi software professionali o siano gli stessi dei giochi (come ad esempio Minecraft).</p>
+<p>In questa guida, divisa per distribuzione, viene spiegato il processo di installazione di Java sia per l'esecuzione di software sia per la programmazione.</p>
+<div class="markdown-heading"><h2 class="heading-element">Installazione</h2><a id="user-content-installazione" class="anchor" aria-label="Permalink: Installazione" href="#installazione"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<div class="markdown-heading"><h3 class="heading-element">Fedora</h3><a id="user-content-fedora" class="anchor" aria-label="Permalink: Fedora" href="#fedora"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per installare JDK seguiamo il seguente comando utile a installare sia JDK <em>prodotto finale</em> sia JDK per sviluppatori (lo riconosciamo dal suffisso <em>devel</em>); nel caso in cui non fossimo interessati a programmare in Java potremo installare solamente <em>java-latest-openjdk</em> tralasciando il secondo pacchetto.</p>
+<pre><code>sudo dnf install java-latest-openjdk java-latest-openjdk-devel
+</code></pre>
+<p>Una volta terminata l'installazione tramite il comando:</p>
+<pre><code>sudo alternatives --config java
+</code></pre>
+<p>Selezioniamo il pacchetto appena installato come destinatario delle chiamate a Java. Digitando il comando verranno infatti esposti i software in grado di eseguire il comando <code>java</code> e dovremo inserire il numero relativo a <em>java-latest-openjdk</em>, di default è invece selezionata una versione fissa, nel caso di Fedora 39 la versione 17.</p>
+<p>Possiamo ora verificare l'installazione tramite i comandi <code>java -version</code> e <code>javac -version</code> che restituiranno rispettivamente le versioni installate di Java per l'esecuzione e la compilazione.</p>
+<div class="markdown-heading"><h3 class="heading-element">Debian, Ubuntu</h3><a id="user-content-debian-ubuntu" class="anchor" aria-label="Permalink: Debian, Ubuntu" href="#debian-ubuntu"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per installare rispettivamente JRE (per l'esecuzione) e JDK (per la compilazione) su Debian seguiamo i seguenti comandi:</p>
+<pre><code>sudo apt install default-jre default-jdk
+</code></pre>
+<p>Come per Fedora omettiamo <code>default-jdk</code> se non ci interessa compilare codice Java.
+È anche possibile, nel caso in cui si scegliesse di installare più versioni scegliere quella da utilizzare tramite il comando</p>
+<pre><code>sudo update-alternatives -config java
+</code></pre>
+<div class="markdown-heading"><h2 class="heading-element">Esecuzione dei file <em>.jar</em>
+</h2><a id="user-content-esecuzione-dei-file-jar" class="anchor" aria-label="Permalink: Esecuzione dei file .jar" href="#esecuzione-dei-file-jar"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per eseguire i file <em>.jar</em> è sufficiente digitare in una finestra di Terminale il comando <code>java -jar</code>, lasciare uno spazio e trascinare all'interno della finestra il file .jar desiderato. Alternativamente è possibile inserirne il percorso.</p>
+
+                      </article>
+                    </div>
+                  </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  </div><script>
+    function showCanonicalImages() {
+      var images = document.getElementsByTagName('img');
+      if (!images) {
+        return;
+      }
+      for (var index = 0; index < images.length; index++) {
+        var image = images[index];
+        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
+          image.src = image.getAttribute('data-canonical-src');
+        }
+      }
+    }
+
+    function scrollToHash() {
+      if (location.hash && !document.querySelector(':target')) {
+        var element = document.getElementById('user-content-' + location.hash.slice(1));
+        if (element) {
+           element.scrollIntoView();
+        }
+      }
+    }
+
+    function autorefreshContent(eventSourceUrl) {
+      var initialTitle = document.title;
+      var contentElement = document.getElementById('grip-content');
+      var source = new EventSource(eventSourceUrl);
+      var isRendering = false;
+
+      source.onmessage = function(ev) {
+        var msg = JSON.parse(ev.data);
+        if (msg.updating) {
+          isRendering = true;
+          document.title = '(Rendering) ' + document.title;
+        } else {
+          isRendering = false;
+          document.title = initialTitle;
+          contentElement.innerHTML = msg.content;
+          showCanonicalImages();
+        }
+      }
+
+      source.onerror = function(e) {
+        if (e.readyState === EventSource.CLOSED && isRendering) {
+          isRendering = false;
+          document.title = initialTitle;
+        }
+      }
+    }
+
+    window.onhashchange = function() {
+      scrollToHash();
+    }
+
+    window.onload = function() {
+      scrollToHash();
+    }
+
+    showCanonicalImages();
+
+    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
+    if (autorefreshUrl) {
+      autorefreshContent(autorefreshUrl);
+    }
+  </script>
+</body>
+</html>

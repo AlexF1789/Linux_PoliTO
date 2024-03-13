@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sezione-4:-PyCharm.md - Grip</title>
+  <link rel="icon" href="/__/grip/static/favicon.ico" />
+  <link rel="stylesheet" href="/__/grip/asset/light-0eace2597ca3.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark-a167e256da9c.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_dimmed-d11f2cf8009b.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_high_contrast-ea7373db06c8.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_colorblind-afa99dcf40f7.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_colorblind-af6c685139ba.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_high_contrast-578cdbc8a5a9.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_tritanopia-5cb699a7e247.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_tritanopia-9b32204967c6.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-primitives-2ef2a46b27ee.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-711f412bb361.css" />
+  <link rel="stylesheet" href="/__/grip/asset/global-2a4ebb67d284.css" />
+  <link rel="stylesheet" href="/__/grip/asset/github-f4d857cbc96a.css" />
+  <link rel="stylesheet" href="/__/grip/asset/repository-6247ca238fd4.css" />
+  <link rel="stylesheet" href="/__/grip/asset/code-36b3bf8f5e76.css" />
+  <link rel="stylesheet" href="/__/grip/static/octicons/octicons.css" />
+  <style>
+    oody {
+      margin: 5%;
+    }
+    
+    /* Page tweaks */
+    .preview-page {
+      margin-top: 64px;
+      margin-bottom: 21px;
+    }
+    /* User-content tweaks */
+    .timeline-comment-wrapper > .timeline-comment:after,
+    .timeline-comment-wrapper > .timeline-comment:before {
+      content: none;
+    }
+    /* User-content overrides */
+    .discussion-timeline.wide {
+      width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div id="preview-page" class="preview-page" data-autorefresh-url="/__/grip/refresh/">
+    <main id="js-repo-pjax-container">
+      <div class="clearfix new-discussion-timeline container-xl px-3 px-md-4 px-lg-5">
+        <div class="repository-content">
+          <div class="clearfix">
+            <div class="Layout Layout--flowRow-until-md Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end">
+              <div class="Layout-main">
+
+                
+
+                  <div id="readme" class="Box md Box--responsive">
+                    
+                      <div class="Box-header d-flex border-bottom-0 flex-items-center flex-justify-between color-bg-default rounded-top-2">
+                        <div class="d-flex flex-items-center">
+                          <h2 class="Box-title">
+                            Sezione-4:-PyCharm.md
+                          </h2>
+                        </div>
+                      </div>
+                    
+                    <div class="Box-body px-5 pb-5">
+                      <article id="grip-content" class="markdown-body entry-content container-lg">
+                        <p>PyCharm è un potente IDE per la programmazione nel linguaggio Python. Al Politecnico nell'ambito della laurea triennale viene affrontato (a partire dal 2021) durante il primo semestre del primo anno (in sostituzione al linguaggio C, affrontato fino al 2020).</p>
+<p>PyCharm non è tendenzialmente l'IDE utilizzato durante le lezioni, le esercitazioni in laboratorio e l'esame (almeno in base alla mia esperienza) in quanto viene utilizzato il più semplice (e gratuito) Visual Studio Code, la cui installazione viene affrontata nella <a href="https://github.com/AlexF1789/Linux_PoliTO/wiki/Sezione-3:-Visual-Studio-Code">Sezione 3</a> di questa guida.</p>
+<div class="markdown-heading"><h2 class="heading-element">Operazione preliminare: installare l'interprete</h2><a id="user-content-operazione-preliminare-installare-linterprete" class="anchor" aria-label="Permalink: Operazione preliminare: installare l'interprete" href="#operazione-preliminare-installare-linterprete"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per eseguire degli script Python è fondamentale avere installato sulla propria macchina l'interprete ovvero il software che si occupa di tradurre il codice in un linguaggio più vicino al linguaggio macchina e inoltrare le richieste alla CPU.</p>
+<p>L'interprete è naturalmente il pacchetto <code>python3</code> che in base alla distribuzione usata sarà più o meno aggiornato.</p>
+<div class="markdown-heading"><h3 class="heading-element">Fedora, RHEL e altre distro RPM</h3><a id="user-content-fedora-rhel-e-altre-distro-rpm" class="anchor" aria-label="Permalink: Fedora, RHEL e altre distro RPM" href="#fedora-rhel-e-altre-distro-rpm"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Essendo Fedora molto aggiornata l'installazione vedrà un pacchetto molto recente, per esempio tra fine 2023 e inizio 2024 viene installata la versione 3.12.x</p>
+<pre><code>sudo dnf install python3
+</code></pre>
+<div class="markdown-heading"><h3 class="heading-element">Debian, Ubuntu, Linux Mint e altre distro DEB</h3><a id="user-content-debian-ubuntu-linux-mint-e-altre-distro-deb" class="anchor" aria-label="Permalink: Debian, Ubuntu, Linux Mint e altre distro DEB" href="#debian-ubuntu-linux-mint-e-altre-distro-deb"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A differenza di Fedora il pacchetto è decisamente meno aggiornato, si passa (sempre nella cronologia dell'esempio precedente) dalla versione 3.10.x di Debian e Linux Mint alla 3.11.x di Ubuntu; il che non è naturalmente un problema visto che sarà verosimilmente la stessa versione usata all'esame sulla piattaforma <em>Crownlabs</em> e da molti colleghi che usano Windows.</p>
+<pre><code>sudo apt install python3
+</code></pre>
+<p>Una volta installati gli interpreti sarà possibile chiamarli su un file Python tramite il comando <code>python3 nomeFilePython</code> mentre sarà possibile avviare una finestra REPL con il comando <code>python3</code>. Per uscire da Python basterà premere la combinazione di tasti <em>CTRL+D</em>.
+Volendo è anche possibile installare versioni più vecchie di Python (per puro sfizio personale) installando sulla propria distribuzione un pacchetto del ramo <code>python2.x</code>.</p>
+<div class="markdown-heading"><h2 class="heading-element">Attivazione della licenza</h2><a id="user-content-attivazione-della-licenza" class="anchor" aria-label="Permalink: Attivazione della licenza" href="#attivazione-della-licenza"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Quanto riportato sotto non è da sostituire a quanto spiegato dal/i docente/i del proprio corso ma vuole solo essere materiale integrativo utile alle operazioni di registrazione e attivazione della propria licenza.</p>
+<p>CLion, PyCharm, IntelliJ IDEA e altri software sviluppati da JetBrains sono disponibili per gli studenti del Politecnico tramite licenza <em>Educational</em>.</p>
+<p>Per attivare la nostra licenza ci rechiamo sulla <a href="https://www.jetbrains.com/community/education/#students" rel="nofollow">pagina ufficiale</a> e premiamo al fondo della stessa <em>Apply now</em>; compiliamo dunque inserendo i nostri dati e la mail <em>@studenti.polito.it</em> (indifferentemente quella con l'alias o la matricola).</p>
+<p>Riceveremo dunque un link tramite mail, procediamo premendo su di esso; avremo così attivato la licenza <em>Educational</em> e sarà ora necessario associarla a un account.
+Per farlo ci registriamo utilizzando sempre la mail <em>@studenti.polito.it</em> (indifferentemente quella con l'alias o la matricola).</p>
+<div class="markdown-heading"><h2 class="heading-element">Installazione di PyCharm</h2><a id="user-content-installazione-di-pycharm" class="anchor" aria-label="Permalink: Installazione di PyCharm" href="#installazione-di-pycharm"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Questa procedura di installazione (consigliata) è valida per ogni distribuzione Linux; in particolare è stata testata con Fedora 39.</p>
+<p>L'installazione di PyCharm si compone dei seguenti passaggi:</p>
+<ul>
+<li>scaricamento dell'archivio in formato <em>.tar.gz</em>;</li>
+<li>copia dei file del programma nella cartella <code>/usr/local/</code>
+</li>
+<li>creazione del lanciatore</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Scaricamento dell'archivio in formato <em>.tar.gz</em>
+</h3><a id="user-content-scaricamento-dellarchivio-in-formato-targz" class="anchor" aria-label="Permalink: Scaricamento dell'archivio in formato .tar.gz" href="#scaricamento-dellarchivio-in-formato-targz"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per scaricare l'archivio contenente i file di esecuzione del programma, perché sì non andiamo a installare niente ma a copiare i file utilizzati dal programma insieme al suo eseguibile, ci rechiamo sulla <a href="https://www.jetbrains.com/pycharm/download/?section=linux" rel="nofollow">pagina di donwload</a> e premiamo il bottone <em>Download</em> accertandoci che sia selezionato nella casella adiacente il formato <em>.tar.gz</em>.</p>
+<p>Una volta terminato lo scaricamento possiamo estrarre il contenuto dell'archivio in una cartella utilizzando l'apposita funzione richiamabile con il tasto destro del mouse oppure adoperare il comando <code>tar xvzf nomeArchivio</code> avendo premura di lanciare lo stesso in una cartella vuota.</p>
+<p>Una volta estratto l'archivio rinominiamo la cartella contenente i file e le cartelle (attenzione a non rinominare una cartella contenente una sottocartella a matrioska ma l'ultima di tali cartelle) <code>pycharm</code>.</p>
+<div class="markdown-heading"><h3 class="heading-element">Copia dei file del programma nella cartella <code>/usr/local/</code>
+</h3><a id="user-content-copia-dei-file-del-programma-nella-cartella-usrlocal" class="anchor" aria-label="Permalink: Copia dei file del programma nella cartella /usr/local/" href="#copia-dei-file-del-programma-nella-cartella-usrlocal"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Analogamente a MATLAB procediamo a installare PyCharm nella cartella <code>/usr/local/</code> creando una sottocartella chiamata <code>pycharm</code>, in realtà sarà la copia della cartella appena rinominata.</p>
+<p>Per copiare i file di installazione procediamo recandoci nella cartella dove abbiamo estratto l'archivio scaricato al punto precedente e rinominato la cartella in <code>pycharm</code> e, aprendo una finestra di terminale, impartiamo il comando:</p>
+<pre><code>sudo cp pycharm/ /usr/local/ -r
+</code></pre>
+<p>Tale comando sta in pratica dicendo di copiare la cartella <code>pycharm/</code> all'interno della cartella <code>/usr/local/</code>, il parametro <code>-r</code> serve quando si usa il comando <code>cp</code> su una cartella per specificare che dovrà copiare ricorsivamente ogni file contenuto nella stessa.</p>
+<p>Una volta fatto ciò sarà possibile avviare PyCharm con il comando:</p>
+<pre><code>/usr/local/pycharm/bin/pycharm.sh
+</code></pre>
+<p>È particolarmente consigliato creare un link simbolico all'interno della cartella <code>/usr/bin/</code> per poter avviare PyCharm attraverso il comando <code>/usr/bin/pycharm</code>; per farlo impartiamo il seguente comando:</p>
+<pre><code>sudo ln -s /usr/local/pycharm/bin/pycharm.sh /usr/bin/pycharm
+</code></pre>
+<div class="markdown-heading"><h3 class="heading-element">Creazione del lanciatore</h3><a id="user-content-creazione-del-lanciatore" class="anchor" aria-label="Permalink: Creazione del lanciatore" href="#creazione-del-lanciatore"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per avere un lanciatore (ovvero l'icona nel menù delle applicazioni), decisamente più comodo del dover digitare ogni volta il comando <code>/usr/bin/pycharm</code>, è possibile utilizzare il file <em>pycharm.desktop</em> caricato in questo repository.</p>
+<p>Per fare ciò recarsi a <a href="https://github.com/AlexF1789/Linux_PoliTO/blob/main/pycharm.desktop">questa pagina</a> e scaricare il file tramite l'icona posta in testa all'anteprima dello stesso.</p>
+<p>Una volta scaricato il file è fondamentale rinominarlo in <em>pycharm.desktop</em> se per qualunque motivo il suo nome fosse stato cambiato (per esempio a causa dell'aggiunta dell'estensione <em>.download</em> in fase di scaricamento da parte del browser).</p>
+<p>Possiamo quindi impartire il seguente comando (da una finestra di terminale aperta nella cartella in cui è presente il file <em>pycharm.desktop</em>) per copiare il file all'interno della cartella <code>/usr/share/applications/</code>:</p>
+<pre><code>sudo cp pycharm.desktop /usr/share/applications/
+</code></pre>
+<p>Avremo dunque installato e creato il lanciatore per PyCharm.</p>
+<div class="markdown-heading"><h2 class="heading-element">Aggiornare PyCharm</h2><a id="user-content-aggiornare-pycharm" class="anchor" aria-label="Permalink: Aggiornare PyCharm" href="#aggiornare-pycharm"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Purtroppo o per fortuna le cartelle su Linux hanno dei permessi di lettura e di scrittura. Nello specifico la cartella <code>/usr/local/</code> è scrivibile solo da <strong>root</strong> e dunque non potremo avviare gli aggiornamenti di versione avviando PyCharm da utente standard.</p>
+<p>È altresì sconsigliato di forzare l'avvio di CLion come root tramite il comando <code>sudo /usr/bin/pycharm</code> in quanto non sarebbero presenti i file di configurazione (che sono salvati nella cartella <strong>~/.config/JetBrains/</strong> dell'utente) e dunque bisognerebbe effettuare nuovamente l'accesso; il tutto senza considerare il fatto che fidarsi è bene, non fidarsi è meglio quando si parla di eseguire software come root (garantendo così accesso indiscriminato a qualunque risorsa sul computer).</p>
+<p>Pertanto il consiglio che mi sento di formulare è quello di ripetere l'operazione di installazione (vista la sua semplicità) all'atto di aggiornare PyCharm.</p>
+<div class="markdown-heading"><h2 class="heading-element">Installazione tramite canali alternativi</h2><a id="user-content-installazione-tramite-canali-alternativi" class="anchor" aria-label="Permalink: Installazione tramite canali alternativi" href="#installazione-tramite-canali-alternativi"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>PyCharm viene anche rilasciato come <a href="https://snapcraft.io/pycharm-professional" rel="nofollow">snap</a> in maniera ufficiale e in maniera non affiliata su <a href="https://flathub.org/apps/com.jetbrains.PyCharm-Professional" rel="nofollow">flathub</a> in formato flatpak.
+Personalmente formulo il consiglio di non usare nessuna di queste versioni, e se proprio si volesse quella <em>snap</em> perché ufficiale.
+Si riportano comunque i comandi di installazione.</p>
+<div class="markdown-heading"><h3 class="heading-element">Snap</h3><a id="user-content-snap" class="anchor" aria-label="Permalink: Snap" href="#snap"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per fare ciò occorre avere installato il pacchetto <code>snapd</code> sulla propria distribuzione.</p>
+<pre><code>snap install pycharm-professional --classic
+</code></pre>
+<div class="markdown-heading"><h3 class="heading-element">Flatpak</h3><a id="user-content-flatpak" class="anchor" aria-label="Permalink: Flatpak" href="#flatpak"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per fare ciò occorre aver installato il pacchetto <code>flatpak</code> sulla propria distribuzione e aver configurato il <em>remote</em> <strong>flathub</strong> secondo quanto specificato a <a href="https://flathub.org/setup" rel="nofollow">questa pagina</a>.</p>
+<pre><code>flatpak install com.jetbrains.PyCharm-Professional
+</code></pre>
+
+                      </article>
+                    </div>
+                  </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  </div><script>
+    function showCanonicalImages() {
+      var images = document.getElementsByTagName('img');
+      if (!images) {
+        return;
+      }
+      for (var index = 0; index < images.length; index++) {
+        var image = images[index];
+        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
+          image.src = image.getAttribute('data-canonical-src');
+        }
+      }
+    }
+
+    function scrollToHash() {
+      if (location.hash && !document.querySelector(':target')) {
+        var element = document.getElementById('user-content-' + location.hash.slice(1));
+        if (element) {
+           element.scrollIntoView();
+        }
+      }
+    }
+
+    function autorefreshContent(eventSourceUrl) {
+      var initialTitle = document.title;
+      var contentElement = document.getElementById('grip-content');
+      var source = new EventSource(eventSourceUrl);
+      var isRendering = false;
+
+      source.onmessage = function(ev) {
+        var msg = JSON.parse(ev.data);
+        if (msg.updating) {
+          isRendering = true;
+          document.title = '(Rendering) ' + document.title;
+        } else {
+          isRendering = false;
+          document.title = initialTitle;
+          contentElement.innerHTML = msg.content;
+          showCanonicalImages();
+        }
+      }
+
+      source.onerror = function(e) {
+        if (e.readyState === EventSource.CLOSED && isRendering) {
+          isRendering = false;
+          document.title = initialTitle;
+        }
+      }
+    }
+
+    window.onhashchange = function() {
+      scrollToHash();
+    }
+
+    window.onload = function() {
+      scrollToHash();
+    }
+
+    showCanonicalImages();
+
+    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
+    if (autorefreshUrl) {
+      autorefreshContent(autorefreshUrl);
+    }
+  </script>
+</body>
+</html>

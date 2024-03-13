@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sezione-3:-Visual-Studio-Code.md - Grip</title>
+  <link rel="icon" href="/__/grip/static/favicon.ico" />
+  <link rel="stylesheet" href="/__/grip/asset/light-0eace2597ca3.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark-a167e256da9c.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_dimmed-d11f2cf8009b.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_high_contrast-ea7373db06c8.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_colorblind-afa99dcf40f7.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_colorblind-af6c685139ba.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_high_contrast-578cdbc8a5a9.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_tritanopia-5cb699a7e247.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_tritanopia-9b32204967c6.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-primitives-2ef2a46b27ee.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-711f412bb361.css" />
+  <link rel="stylesheet" href="/__/grip/asset/global-2a4ebb67d284.css" />
+  <link rel="stylesheet" href="/__/grip/asset/github-f4d857cbc96a.css" />
+  <link rel="stylesheet" href="/__/grip/asset/repository-6247ca238fd4.css" />
+  <link rel="stylesheet" href="/__/grip/asset/code-36b3bf8f5e76.css" />
+  <link rel="stylesheet" href="/__/grip/static/octicons/octicons.css" />
+  <style>
+    body {
+      margin: 5%;
+    }
+
+    /* Page tweaks */
+    .preview-page {
+      margin-top: 64px;
+      margin-bottom: 21px;
+    }
+    /* User-content tweaks */
+    .timeline-comment-wrapper > .timeline-comment:after,
+    .timeline-comment-wrapper > .timeline-comment:before {
+      content: none;
+    }
+    /* User-content overrides */
+    .discussion-timeline.wide {
+      width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div id="preview-page" class="preview-page" data-autorefresh-url="/__/grip/refresh/">
+    <main id="js-repo-pjax-container">
+      <div class="clearfix new-discussion-timeline container-xl px-3 px-md-4 px-lg-5">
+        <div class="repository-content">
+          <div class="clearfix">
+            <div class="Layout Layout--flowRow-until-md Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end">
+              <div class="Layout-main">
+
+                
+
+                  <div id="readme" class="Box md Box--responsive">
+                    
+                      <div class="Box-header d-flex border-bottom-0 flex-items-center flex-justify-between color-bg-default rounded-top-2">
+                        <div class="d-flex flex-items-center">
+                          <h2 class="Box-title">
+                            Sezione-3:-Visual-Studio-Code.md
+                          </h2>
+                        </div>
+                      </div>
+                    
+                    <div class="Box-body px-5 pb-5">
+                      <article id="grip-content" class="markdown-body entry-content container-lg">
+                        <p>Visual Studio Code è un software creato da Microsoft a partire da un progetto <em>open source</em> a seguito dell'acquisizione della piattaforma GitHub.
+È un software indirizzato allo sviluppo di codice sorgente e infatti pecca sotto alcuni aspetti per cui non può pienamente essere considerato un IDE a cui però si avvicina grazie al grande numero di estensioni disponibili nello store integrato.</p>
+<p>Al Politecnico viene utilizzato fin dalle prime lezioni al corso di Informatica quale editor suggerito (e utilizzato durante l'esame grazie alla piattaforma <em>Crownlabs</em>).</p>
+<p>Prima di procedere con l'installazione è però necessario porre una premessa ovvero: VSCode è <em>open source</em>?
+La risposta a questa domanda purtroppo è no, infatti il codice alla base di VSCode è <em>open source</em> ma le <em>build</em> rilasciate da Microsoft sul sito ufficiale non lo sono affatto; la differenza tra quanto compilabile in autonomia e quanto compilato da Microsoft concerne in dati di telemetria anonima sull'uso stesso del programma.</p>
+<p>A questo punto si pongono due scuole di pensiero riguardo alla domanda <em>È bene usare VSCode malgrado la telemetria?</em></p>
+<ul>
+<li>Se la risposta fosse sì è possibile seguire il primo punto (installare Visual Studio Code).</li>
+<li>Se la risposta fosse no è possibile seguire il secondo punto (installare Visual Studio Codium).</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element">Installare Visual Studio Code</h2><a id="user-content-installare-visual-studio-code" class="anchor" aria-label="Permalink: Installare Visual Studio Code" href="#installare-visual-studio-code"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<div class="markdown-heading"><h3 class="heading-element">Fedora, RHEL e altre distro RPM</h3><a id="user-content-fedora-rhel-e-altre-distro-rpm" class="anchor" aria-label="Permalink: Fedora, RHEL e altre distro RPM" href="#fedora-rhel-e-altre-distro-rpm"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per installare VSCode su Fedora, RHEL e altre distro con formato pacchetti RPM basta seguire i comandi riportati alla <a href="https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions" rel="nofollow">pagina ufficiale</a>.
+Tali comandi sono rispettivamente utili a:</p>
+<ul>
+<li>importare la firma del repository;</li>
+<li>creare un file all'interno della cartella <code>/etc/yum.repos.d/</code> chiamato <code>vscode.repo</code> ovvero aggiungere il repository dove sono presenti i file di installazione di VSCode;</li>
+<li>aggiornare le informazioni sui repository e sui pacchetti installati;</li>
+<li>installare il pacchetto <code>code</code> dal repository appena aggiunto.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Debian, Ubuntu, Linux Mint e altre distro DEB</h3><a id="user-content-debian-ubuntu-linux-mint-e-altre-distro-deb" class="anchor" aria-label="Permalink: Debian, Ubuntu, Linux Mint e altre distro DEB" href="#debian-ubuntu-linux-mint-e-altre-distro-deb"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per installare VSCode su Debian, Ubuntu, Linux Mint e altre distro con formato pacchetti DEB bisogna innanzitutto recarsi sulla <a href="https://code.visualstudio.com/docs/?dv=linux64_deb" rel="nofollow">pagina di download</a> del sito ufficiale e scaricare il pacchetto <em>.deb</em>.
+Una volta fatto ciò basterà aprire una finestra di Terminale e digitare il seguente comando:</p>
+<blockquote>
+<p><code>sudo apt install </code></p>
+</blockquote>
+<p>assicurandosi di lasciare uno spazio finale e trascinare il file <em>.deb</em> appena scaricato all'interno della finestra.
+Alternativamente è possibile inserire il percorso del file tramite tastiera.</p>
+<p>Partirà dunque il processo di installazione che aggiungerà in automatico i repository di Microsoft per aggiornare VSCode con tutto il sistema.</p>
+<p><strong>Attenzione</strong>: all'atto di avanzare di versione con Ubuntu viene momentaneamente disabilitato il repository, bisogna dunque procedere a riattivarlo mediante comando oppure utilizzando il programma <em>Software e aggiornamenti</em>.</p>
+<div class="markdown-heading"><h2 class="heading-element">Installare Visual Studio Codium</h2><a id="user-content-installare-visual-studio-codium" class="anchor" aria-label="Permalink: Installare Visual Studio Codium" href="#installare-visual-studio-codium"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Prima di procedere con l'installazione chiariamo subito il dubbio che immagino chiunque abbia a questo punto della guida ovvero: <em>Cos'è VSCodium?</em></p>
+<p>VSCodium è una <em>build</em> libera del codice alla base di VSCode; a dir la verità all'interno del <a href="https://github.com/VSCodium/vscodium">repository GitHub</a> sono presenti degli script per compilare in autonomia il codice sorgente di VSCode (distribuito sotto la licenza MIT).</p>
+<p>Perciò VSCodium è lo praticamente VSCode senza telemetria di Microsoft senza mostrare pesanti differenze dallo stesso (varia solo nelle estensioni l'assenza della spunta di verificato ed è un po' più buggata la colorazione delle variabili).</p>
+<p>Per installarlo basta seguire i comandi riportati sul <a href="https://vscodium.com/" rel="nofollow">sito ufficiale</a>; analogamente all'installazione di VSCode su Fedora viene importata la chiave del repository, viene aggiunto un repository e installato VSCodium.</p>
+<div class="markdown-heading"><h2 class="heading-element">Disinstallare Visual Studio Code</h2><a id="user-content-disinstallare-visual-studio-code" class="anchor" aria-label="Permalink: Disinstallare Visual Studio Code" href="#disinstallare-visual-studio-code"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per disinstallare VSCode è sufficiente seguire i seguenti passaggi:</p>
+<ul>
+<li>rimuovere il pacchetto</li>
+<li>rimuovere il repository</li>
+</ul>
+<p>Perciò i comandi diventano i seguenti per le seguenti distro:</p>
+<div class="markdown-heading"><h3 class="heading-element">Fedora, RHEL e altre distro RPM</h3><a id="user-content-fedora-rhel-e-altre-distro-rpm-1" class="anchor" aria-label="Permalink: Fedora, RHEL e altre distro RPM" href="#fedora-rhel-e-altre-distro-rpm-1"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per rimuovere il pacchetto <code>code</code> corrispondente a Visual Studio Code scriveremo in una finestra di Terminale:</p>
+<blockquote>
+<p><code>sudo dnf remove code</code></p>
+</blockquote>
+<p>Per rimuovere il repository cercheremo il file <em>.repo</em> corrispondente presente all'interno della cartella <em>/etc/yum.repos.d/</em>; in particolare il comando potrebbe essere (potrebbe variare in futuro perciò è bene verificare preventivamente il nome del file da cancellare tramite <code>ls /etc/yum.repos.d/</code>, scegliendo il file corrispondente):</p>
+<blockquote>
+<p><code>sudo rm /etc/yum.repos.d/vscode.repo</code></p>
+</blockquote>
+<p>Così facendo si avrà completamente rimosso sia VSCode sia il repository.</p>
+<div class="markdown-heading"><h3 class="heading-element">Debian, Ubuntu, Linux Mint e altre distro DEB</h3><a id="user-content-debian-ubuntu-linux-mint-e-altre-distro-deb-1" class="anchor" aria-label="Permalink: Debian, Ubuntu, Linux Mint e altre distro DEB" href="#debian-ubuntu-linux-mint-e-altre-distro-deb-1"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per rimuovere il pacchetto <code>code</code> corrispondente a Visual Studio Code scriveremo in una finestra di Terminale:</p>
+<blockquote>
+<p><code>sudo apt remove code</code></p>
+</blockquote>
+<p>Per rimuovere il repository cercheremo il file <em>.list</em> corrispondente presente all'interno della cartella <em>/etc/apt/sources.list.d/</em>; in particolare il comando potrebbe essere (potrebbe variare in futuro perciò è bene verificare preventivamente il nome del file da cancellare tramite <code>ls /etc/apt/sources.list.d/</code>, scegliendo il file corrispondente):</p>
+<blockquote>
+<p><code>sudo rm /etc/apt/sources.list.d/vscode.list</code></p>
+</blockquote>
+<p>Così facendo si avrà completamente rimosso sia VSCode sia il repository.</p>
+<div class="markdown-heading"><h2 class="heading-element">Disinstallare Visual Studio Codium</h2><a id="user-content-disinstallare-visual-studio-codium" class="anchor" aria-label="Permalink: Disinstallare Visual Studio Codium" href="#disinstallare-visual-studio-codium"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per disinstallare VSCode è sufficiente seguire i seguenti passaggi:</p>
+<ul>
+<li>rimuovere il pacchetto</li>
+<li>rimuovere il repository</li>
+</ul>
+<p>Perciò i comandi diventano i seguenti per le seguenti distro:</p>
+<div class="markdown-heading"><h3 class="heading-element">Fedora, RHEL e altre distro RPM</h3><a id="user-content-fedora-rhel-e-altre-distro-rpm-2" class="anchor" aria-label="Permalink: Fedora, RHEL e altre distro RPM" href="#fedora-rhel-e-altre-distro-rpm-2"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per rimuovere il pacchetto <code>codium</code> corrispondente a Visual Studio Code scriveremo in una finestra di Terminale:</p>
+<blockquote>
+<p><code>sudo dnf remove codium</code></p>
+</blockquote>
+<p>Per rimuovere il repository cercheremo il file <em>.repo</em> corrispondente presente all'interno della cartella <em>/etc/yum.repos.d/</em>; in particolare il comando potrebbe essere (potrebbe variare in futuro perciò è bene verificare preventivamente il nome del file da cancellare tramite <code>ls /etc/yum.repos.d/</code>, scegliendo il file corrispondente):</p>
+<blockquote>
+<p><code>sudo rm /etc/yum.repos.d/vscodium.repo</code></p>
+</blockquote>
+<p>Così facendo si avrà completamente rimosso sia VSCode sia il repository.</p>
+<div class="markdown-heading"><h3 class="heading-element">Debian, Ubuntu, Linux Mint e altre distro DEB</h3><a id="user-content-debian-ubuntu-linux-mint-e-altre-distro-deb-2" class="anchor" aria-label="Permalink: Debian, Ubuntu, Linux Mint e altre distro DEB" href="#debian-ubuntu-linux-mint-e-altre-distro-deb-2"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Per rimuovere il pacchetto <code>code</code> corrispondente a Visual Studio Code scriveremo in una finestra di Terminale:</p>
+<blockquote>
+<p><code>sudo apt remove codium</code></p>
+</blockquote>
+<p>Per rimuovere il repository cercheremo il file <em>.list</em> corrispondente presente all'interno della cartella <em>/etc/apt/sources.list.d/</em>; in particolare il comando potrebbe essere (potrebbe variare in futuro perciò è bene verificare preventivamente il nome del file da cancellare tramite <code>ls /etc/apt/sources.list.d/</code>, scegliendo il file corrispondente):</p>
+<blockquote>
+<p><code>sudo rm /etc/apt/sources.list.d/vscodium.list</code></p>
+</blockquote>
+<p>Così facendo si avrà completamente rimosso sia VSCode sia il repository.</p>
+
+                      </article>
+                    </div>
+                  </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  </div><script>
+    function showCanonicalImages() {
+      var images = document.getElementsByTagName('img');
+      if (!images) {
+        return;
+      }
+      for (var index = 0; index < images.length; index++) {
+        var image = images[index];
+        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
+          image.src = image.getAttribute('data-canonical-src');
+        }
+      }
+    }
+
+    function scrollToHash() {
+      if (location.hash && !document.querySelector(':target')) {
+        var element = document.getElementById('user-content-' + location.hash.slice(1));
+        if (element) {
+           element.scrollIntoView();
+        }
+      }
+    }
+
+    function autorefreshContent(eventSourceUrl) {
+      var initialTitle = document.title;
+      var contentElement = document.getElementById('grip-content');
+      var source = new EventSource(eventSourceUrl);
+      var isRendering = false;
+
+      source.onmessage = function(ev) {
+        var msg = JSON.parse(ev.data);
+        if (msg.updating) {
+          isRendering = true;
+          document.title = '(Rendering) ' + document.title;
+        } else {
+          isRendering = false;
+          document.title = initialTitle;
+          contentElement.innerHTML = msg.content;
+          showCanonicalImages();
+        }
+      }
+
+      source.onerror = function(e) {
+        if (e.readyState === EventSource.CLOSED && isRendering) {
+          isRendering = false;
+          document.title = initialTitle;
+        }
+      }
+    }
+
+    window.onhashchange = function() {
+      scrollToHash();
+    }
+
+    window.onload = function() {
+      scrollToHash();
+    }
+
+    showCanonicalImages();
+
+    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
+    if (autorefreshUrl) {
+      autorefreshContent(autorefreshUrl);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sezione-1:-Scelta-della-distro.md - Grip</title>
+  <link rel="icon" href="/__/grip/static/favicon.ico" />
+  <link rel="stylesheet" href="/__/grip/asset/light-0eace2597ca3.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark-a167e256da9c.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_dimmed-d11f2cf8009b.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_high_contrast-ea7373db06c8.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_colorblind-afa99dcf40f7.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_colorblind-af6c685139ba.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_high_contrast-578cdbc8a5a9.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_tritanopia-5cb699a7e247.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_tritanopia-9b32204967c6.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-primitives-2ef2a46b27ee.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-711f412bb361.css" />
+  <link rel="stylesheet" href="/__/grip/asset/global-2a4ebb67d284.css" />
+  <link rel="stylesheet" href="/__/grip/asset/github-f4d857cbc96a.css" />
+  <link rel="stylesheet" href="/__/grip/asset/repository-6247ca238fd4.css" />
+  <link rel="stylesheet" href="/__/grip/asset/code-36b3bf8f5e76.css" />
+  <link rel="stylesheet" href="/__/grip/static/octicons/octicons.css" />
+  <style>
+    body {
+      margin: 5;
+    }
+    /* Page tweaks */
+    .preview-page {
+      margin-top: 64px;
+      margin-bottom: 21px;
+    }
+    /* User-content tweaks */
+    .timeline-comment-wrapper > .timeline-comment:after,
+    .timeline-comment-wrapper > .timeline-comment:before {
+      content: none;
+    }
+    /* User-content overrides */
+    .discussion-timeline.wide {
+      width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div id="preview-page" class="preview-page" data-autorefresh-url="/__/grip/refresh/">
+    <main id="js-repo-pjax-container">
+      <div class="clearfix new-discussion-timeline container-xl px-3 px-md-4 px-lg-5">
+        <div class="repository-content">
+          <div class="clearfix">
+            <div class="Layout Layout--flowRow-until-md Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end">
+              <div class="Layout-main">
+
+                
+
+                  <div id="readme" class="Box md Box--responsive">
+                    
+                      <div class="Box-header d-flex border-bottom-0 flex-items-center flex-justify-between color-bg-default rounded-top-2">
+                        <div class="d-flex flex-items-center">
+                          <h2 class="Box-title">
+                            Sezione-1:-Scelta-della-distro.md
+                          </h2>
+                        </div>
+                      </div>
+                    
+                    <div class="Box-body px-5 pb-5">
+                      <article id="grip-content" class="markdown-body entry-content container-lg">
+                        <div class="markdown-heading"><h2 class="heading-element">La scelta della distribuzione</h2><a id="user-content-la-scelta-della-distribuzione" class="anchor" aria-label="Permalink: La scelta della distribuzione" href="#la-scelta-della-distribuzione"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Nel passaggio a Linux si pone un problema che l'utente Windows o macOS non ha mai considerato: scegliere il proprio sistema operativo. Perché sì, effettivamente quando ci riferiamo a GNU/Linux in realtà non ci stiamo riferendo a un sistema operativo ma a una famiglia di sistemi operativi accomunati dal kernel Linux ma che differiscono per quanto riguarda alcuni parametri (in realtà secondari rispetto al totale OS).
+Non essendo questo un corso di sistemi operativi si lascia però all'utente la possibilità di informarsi pienamente in materia lasciando alla guida solamente gli aspetti ridotti <em>all'osso</em> per chiarezza espositiva e brevità.</p>
+<p>Tra le principali distribuzioni Linux disponibili al giorno d'oggi sono presenti:</p>
+<ul>
+<li>
+<strong>Debian</strong>, il <em>sistema operativo universale</em>, più vecchia distro a essere ancora attualmente sviluppata e mantenuta; ha sempre basato il suo punto di forza sulla stabilità - a scapito naturalmente dell'aggiornamento dei pacchetti. Utilizza pacchetti in formato <em>.deb</em> e <em>apt</em> (precedentemente <em>dpkg</em>) come package manager. La sua versione <em>stable</em> vede grandi aggiornamenti (con aumento del numero incrementale che ne indica la versione, attualmente la 12) ogni circa 2 anni mantenendo il supporto per tendenzialmente altri 2.</li>
+<li>
+<strong>Ubuntu</strong>, derivata (ossia sviluppata partendo dal codice) di Debian a partire dal ramo <em>unstable</em> di questa (ne mantiene perciò la struttura dei pacchetti <em>.deb</em> e il package manager <em>apt</em>); presenta software più aggiornato mantenendo comunque un'ottima stabilità che fa si che sia una tra le migliori scelte per prestazioni e versatilità. I rilasci sono due all'anno: rispettivamente la versione AA.04 ad aprile e la versione AA.10 ad ottobre (AA indica le ultime due cifre dell'anno), la versione di aprile degli anni pari è denominata LTS e ha supporto esteso di 5 anni (3 per le derivate ufficiali) anziché i canonici 9 mesi. Recentemente è stata presa di mira dagli utenti più puristi a causa della sempre più pressante pretesa di Canonical (la software house che sviluppa Ubuntu) verso i pacchetti <em>snap</em> ritenuti da molti non veramente trasparenti (non si può aprire un repository <em>snap</em> che non sia <em>snapcraft.io</em>) e a causa delle prestazioni (decisamente scarse vista la necessità di montare in RAM i pacchetti all'avvio della macchina).</li>
+<li>
+<strong>Linux Mint</strong>, derivata non ufficiale di Ubuntu (sviluppata dalle versioni LTS per maggiore precisione); ne esiste anche una versione derivata direttamente da Debian <em>stable</em> e chiamata Linux Mint Debian Edition. È diventata molto popolare specialmente tra gli utenti novizi a causa del suo look simil-Windows e della sua community veramente molto attiva. A differenza di Ubuntu non usa i pacchetti <em>snap</em> restando fedele ai classici <em>.deb</em> e nel complesso non si può dire che sia una brutta distribuzione anche se, per gli utenti più esperti, risulta essere un po' limitante e troppo legata al suo ambiente desktop Cinnamon.</li>
+<li>
+<strong>Fedora</strong>, ultima nella lista ma prima nel cuore di chi scrive; è senza dubbio la distro pioniera del mondo Linux. Il suo sviluppo viene sostenuto da Red Hat (società recentemente acquisita da IBM che si occupa di Linux a livello enterprise) e che ha come obiettivi fondamentali quelli di fornire un'esperienza utente sempre aggiornata, mantenendo la stabilità e avendo un approccio legato alla community. Fedora è di un ramo completamente opposto a quello delle distro precedenti, usa infatti i pacchetti in formato <em>.rpm</em> e il package manager <em>dnf</em> (precedentemente <em>yum</em>). Storicamente meno apprezzata dagli utenti desktop a causa dell'inferiorità del package manager (ora risolta) si è ritrovata a essere la distro preferita di molti <em>esuli</em> di Ubuntu (post-<em>snap</em>). Viene rilasciata una nuova versione ogni 6 mesi e supportata per 13 mesi circa; attualmente la versione stabile è la 39.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element">Ambiente desktop</h2><a id="user-content-ambiente-desktop" class="anchor" aria-label="Permalink: Ambiente desktop" href="#ambiente-desktop"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Ciò che volutamente è stato tralasciato nella descrizione delle distro presentate è stato un aspetto che storicamente si può dire molto importante ovvero: <em>Come appare?</em>
+In realtà su Linux questo aspetto è paradossalmente secondario in quanto la struttura dello stesso è estremamente modulare e in tale ottica a incastro l'aspetto finale (dato dall'ambiente desktop) è posto sicuramente dopo alla scelta della distro da installare.
+I principali ambienti desktop per Linux sono:</p>
+<ul>
+<li>
+<strong>GNOME</strong>, ambiente grafico predefinito di molte distro, utilizza il toolkit GTK+ e si presenta molto diverso da Windows. All'interno della GNOME Shell (ormai alla versione 45) possiamo identificare degli elementi che ricordano i dispositivi mobili e che perciò si sposano meglio con i dispositivi touch. È possibile installare delle estensioni quali per esempio <em>Blur My Shell</em> per rendere ancora più bello il tutto. Inoltre è il migliore ambiente desktop a livello di integrazione delle gestures.</li>
+<li>
+<strong>KDE Plasma</strong>, ambiente storicamente alternativo (anche se a dirla tutta è nato prima lui). Ormai alla versione 6 (rilasciata da pochissimo a fine Febbraio 2024) si presenta decisamente più classicheggiante riprendendo Windows ma avendo molte, alle volte troppe funzioni integrate che ne rendono l'uso alle volte frustrante. Si presenta comunque molto bene e utilizzando il toolkit Qt (da leggere come <em>cutie</em>) presenta un'alta compatibilità con molti software a livello scientifico.</li>
+<li>
+<strong>Cinnamon</strong>, ambiente desktop sviluppato dal team di sviluppo di Linux Mint; si presenta molto simile a Windows di cui cerca di emulare gli aspetti principali (senza però dimenticare la natura Linux). Può piacere o no, rispetto a KDE Plasma è decisamente più scarno ma ciò non implica che non sia utilizzabile, anzi, per un uso desktop va benissimo. Il <em>problema</em> più grande potrebbe però essere il forte legame con una distribuzione. Attualmente è nel pieno del suo sviluppo avendo appena raggiunto l'implementazione delle sessioni Wayland (per ora a livello sperimentale).</li>
+<li>
+<strong>XFCE</strong>, uno degli ambienti desktop più leggero a scapito della completezza. Può infatti risultare molto scarno e manca completamente, come nei successivi, la compatibilità con Wayland (ormai quasi fondamentale, Fedora 40 abbandonerà infatti il supporto a X.Org per GNOME e KDE e ciò la dice lunga sul futuro del vecchio protocollo grafico).</li>
+<li>
+<strong>MATE</strong>, fork della versione 2 di GNOME, si presenta decisamente classicheggiante per quanto grazie alla compatibilità con GTK+3 si possa rendere moderno (guardare per esempio il tema Yaru sviluppato per Ubuntu MATE). È molto completo (essendo basato su GNOME 2 che era già ritenuto completissimo) e leggero.</li>
+<li>
+<strong>LXQt</strong> e <strong>LXDE</strong>, i più leggeri tra gli ambienti desktop; sono però eccessivamente scarni e alle volte il risparmio di risorse non vale la pena.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element">Scegliere consapevolmente e assemblare il tutto</h2><a id="user-content-scegliere-consapevolmente-e-assemblare-il-tutto" class="anchor" aria-label="Permalink: Scegliere consapevolmente e assemblare il tutto" href="#scegliere-consapevolmente-e-assemblare-il-tutto"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Una volta scelta una distribuzione è sicuramente possibile cambiarla ma è opportuno farlo solo per motivazioni serie (per intenderci non perché è più bella graficamente ma piuttosto perché i pacchetti sono più aggiornati o perché <em>gira</em> meglio sul nostro hardware). Il comportamento dell'utente che cambia continuamente la distribuzione in uso è detto <em>Distro Hopping</em> e non è consigliato (per quanto sia riconosciuto universalmente che nella vita di un utente Linux sia un passaggio inevitabile).</p>
+<p>In linea di massima il consiglio che posso formulare dopo aver fatto parecchie prove in materia è che Fedora è la distro che gira meglio nella quasi totalità dei casi. In ogni caso sarebbe opportuno valutare di effettuare qualche modifica quale sostituire il disco rigido passando a un SSD e di aumentare la dimensione (e possibilmente la frequenza) della RAM. Per chiarirci qualunque sistema operativo risulta cambiare dall'oggi al domani se si usa un SSD e se è tutto ben proporzionato a livello di memoria RAM e processore.
+Per quanto riguarda l'ambiente grafico è una scelta puramente personale; nel mio caso sono un grande utilizzatore di GNOME ma non disdegno KDE che utilizzo su una macchina secondaria ma solamente per questioni estetiche (<em>de gustibus non disputandum est</em>).</p>
+<p>Una volta scelto il sistema operativo e l'ambiente grafico il gioco è fatto; basta infatti recarsi sul sito dello sviluppatore, scaricare la ISO con l'ambiente desktop corrispondente, creare una USB avviabile e avviare il sistema operativo in live. In rete sono presenti moltissimi tutorial in materia e perciò non sarà obiettivo della wiki dilungarsi in ciò.
+Nota bene: è sempre possibile passare da un ambiente desktop a un altro una volta installato il sistema operativo; ciò è comunque un'operazione lunga e spesso porta strascichi a livello di configurazione perciò non è detto che convenga fare ciò. Meglio scegliere subito bene.</p>
+
+                      </article>
+                    </div>
+                  </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  </div><script>
+    function showCanonicalImages() {
+      var images = document.getElementsByTagName('img');
+      if (!images) {
+        return;
+      }
+      for (var index = 0; index < images.length; index++) {
+        var image = images[index];
+        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
+          image.src = image.getAttribute('data-canonical-src');
+        }
+      }
+    }
+
+    function scrollToHash() {
+      if (location.hash && !document.querySelector(':target')) {
+        var element = document.getElementById('user-content-' + location.hash.slice(1));
+        if (element) {
+           element.scrollIntoView();
+        }
+      }
+    }
+
+    function autorefreshContent(eventSourceUrl) {
+      var initialTitle = document.title;
+      var contentElement = document.getElementById('grip-content');
+      var source = new EventSource(eventSourceUrl);
+      var isRendering = false;
+
+      source.onmessage = function(ev) {
+        var msg = JSON.parse(ev.data);
+        if (msg.updating) {
+          isRendering = true;
+          document.title = '(Rendering) ' + document.title;
+        } else {
+          isRendering = false;
+          document.title = initialTitle;
+          contentElement.innerHTML = msg.content;
+          showCanonicalImages();
+        }
+      }
+
+      source.onerror = function(e) {
+        if (e.readyState === EventSource.CLOSED && isRendering) {
+          isRendering = false;
+          document.title = initialTitle;
+        }
+      }
+    }
+
+    window.onhashchange = function() {
+      scrollToHash();
+    }
+
+    window.onload = function() {
+      scrollToHash();
+    }
+
+    showCanonicalImages();
+
+    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
+    if (autorefreshUrl) {
+      autorefreshContent(autorefreshUrl);
+    }
+  </script>
+</body>
+</html>

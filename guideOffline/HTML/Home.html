@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Home.md - Grip</title>
+  <link rel="icon" href="/__/grip/static/favicon.ico" />
+  <link rel="stylesheet" href="/__/grip/asset/light-0eace2597ca3.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark-a167e256da9c.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_dimmed-d11f2cf8009b.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_high_contrast-ea7373db06c8.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_colorblind-afa99dcf40f7.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_colorblind-af6c685139ba.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_high_contrast-578cdbc8a5a9.css" />
+  <link rel="stylesheet" href="/__/grip/asset/light_tritanopia-5cb699a7e247.css" />
+  <link rel="stylesheet" href="/__/grip/asset/dark_tritanopia-9b32204967c6.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-primitives-2ef2a46b27ee.css" />
+  <link rel="stylesheet" href="/__/grip/asset/primer-711f412bb361.css" />
+  <link rel="stylesheet" href="/__/grip/asset/global-2a4ebb67d284.css" />
+  <link rel="stylesheet" href="/__/grip/asset/github-f4d857cbc96a.css" />
+  <link rel="stylesheet" href="/__/grip/asset/repository-6247ca238fd4.css" />
+  <link rel="stylesheet" href="/__/grip/asset/code-36b3bf8f5e76.css" />
+  <link rel="stylesheet" href="/__/grip/static/octicons/octicons.css" />
+  <style>
+    /* Page tweaks */
+    .preview-page {
+      margin-top: 64px;
+      margin-bottom: 21px;
+    }
+    /* User-content tweaks */
+    .timeline-comment-wrapper > .timeline-comment:after,
+    .timeline-comment-wrapper > .timeline-comment:before {
+      content: none;
+    }
+    /* User-content overrides */
+    .discussion-timeline.wide {
+      width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div id="preview-page" class="preview-page" data-autorefresh-url="/__/grip/refresh/">
+    <main id="js-repo-pjax-container">
+      <div class="clearfix new-discussion-timeline container-xl px-3 px-md-4 px-lg-5">
+        <div class="repository-content">
+          <div class="clearfix">
+            <div class="Layout Layout--flowRow-until-md Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end">
+              <div class="Layout-main">
+
+                
+
+                  <div id="readme" class="Box md Box--responsive">
+                    
+                      <div class="Box-header d-flex border-bottom-0 flex-items-center flex-justify-between color-bg-default rounded-top-2">
+                        <div class="d-flex flex-items-center">
+                          <h2 class="Box-title">
+                            Home.md
+                          </h2>
+                        </div>
+                      </div>
+                    
+                    <div class="Box-body px-5 pb-5">
+                      <article id="grip-content" class="markdown-body entry-content container-lg">
+                        <p>Benvenuto nel nocciolo del repository; se sei qui significa che sei sopravvissuto al <em>README</em> e vuoi metterti in gioco seriamente.</p>
+<p>Nelle prossime sezioni troverai varie tematiche affrontate tendenzialmente abbastanza nel dettaglio: in particolare nella seconda sezione (forse la più importante per iniziare) troverai una guida che ti porterà a configurare da zero il computer su cui hai appena installato Linux fornendoti alcuni consigli relativi ai principali software utilizzabili per le operazioni quotidiane.</p>
+<p>Viene anche affrontato il discorso dell'installazione dei pacchetti, in particolare viene presentata la logica dei repository software e dell'uso dei package manager <em>apt</em> e <em>dnf</em>. Viene inoltre spiegata la configurazione di Flatpak per poter installare software in tale formato.
+Viene infine spiegata la procedura di installazione di compilatori quali GCC e G++, della JVM e dell'interprete Python (teoricamente già installato); naturalmente questa parte come le precedenti sono da valutare di caso in caso - tendenzialmente a uno studente una L-8 saranno molto utili.</p>
+<p>Nelle sezioni successive l'attenzione si rivolgerà a tematiche più specifiche quali l'installazione di software specifici (MATLAB, Visual Studio Code, ...); in tali guide spesso ci si troverà a dover impartire comandi dal terminale. Ogni comando verrà spiegato nel dettaglio (parametro per parametro) per cercare quanto più possibile di trasmettere non solo l'approccio del <em>copio il comando e via</em> ma con l'intento di trasmettere all'utente la consapevolezza delle operazioni (per poterne anche apprezzare la versatilità).</p>
+<p>A partire dalla sezione 2 si presume che l'utente abbia già installato su disco una distribuzione Linux tra quelle proposte (Fedora, Debian, Ubuntu, Linux Mint); non ha senso seguire questa guida su un sistema avviato da una USB live. Si presume inoltre che l'utente abbia sulla macchina la possibilità di utilizzare il comando <em>sudo</em> per acquisire i privilegi di <em>root</em>.</p>
+
+                      </article>
+                    </div>
+                  </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  </div><script>
+    function showCanonicalImages() {
+      var images = document.getElementsByTagName('img');
+      if (!images) {
+        return;
+      }
+      for (var index = 0; index < images.length; index++) {
+        var image = images[index];
+        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
+          image.src = image.getAttribute('data-canonical-src');
+        }
+      }
+    }
+
+    function scrollToHash() {
+      if (location.hash && !document.querySelector(':target')) {
+        var element = document.getElementById('user-content-' + location.hash.slice(1));
+        if (element) {
+           element.scrollIntoView();
+        }
+      }
+    }
+
+    function autorefreshContent(eventSourceUrl) {
+      var initialTitle = document.title;
+      var contentElement = document.getElementById('grip-content');
+      var source = new EventSource(eventSourceUrl);
+      var isRendering = false;
+
+      source.onmessage = function(ev) {
+        var msg = JSON.parse(ev.data);
+        if (msg.updating) {
+          isRendering = true;
+          document.title = '(Rendering) ' + document.title;
+        } else {
+          isRendering = false;
+          document.title = initialTitle;
+          contentElement.innerHTML = msg.content;
+          showCanonicalImages();
+        }
+      }
+
+      source.onerror = function(e) {
+        if (e.readyState === EventSource.CLOSED && isRendering) {
+          isRendering = false;
+          document.title = initialTitle;
+        }
+      }
+    }
+
+    window.onhashchange = function() {
+      scrollToHash();
+    }
+
+    window.onload = function() {
+      scrollToHash();
+    }
+
+    showCanonicalImages();
+
+    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
+    if (autorefreshUrl) {
+      autorefreshContent(autorefreshUrl);
+    }
+  </script>
+</body>
+</html>
